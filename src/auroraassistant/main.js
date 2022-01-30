@@ -2,8 +2,8 @@
 define(['base/js/namespace', 'base/js/events'], 
 function(Jupyter, events) 
 {
-    let token = 'testtoken';
-    let url = 'https://localhost:44384/api/test';
+    let token = '';
+    let url = 'http://4k3skl.keenetic.pro/api/';
     let loadingtemplate = 
     `<img src="https://upload.wikimedia.org/wikipedia/commons/2/28/InternetSlowdown_Day.gif"\n` +
     `    alt="Loading..." width="10%" height="10%">\n` +
