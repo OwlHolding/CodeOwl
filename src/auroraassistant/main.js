@@ -19,7 +19,7 @@ function(Jupyter, events)
             Jupyter.notebook.select_next();
             Jupyter.notebook.to_markdown();
             let cell = Jupyter.notebook.get_selected_cell();
-            cell.set_text(template);
+            cell.set_text(loadingtemplate);
             cell.execute();
             let response = await fetch(url, 
             {
