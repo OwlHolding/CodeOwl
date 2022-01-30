@@ -5,9 +5,9 @@ function(Jupyter, events)
     let token = 'testtoken';
     let url = 'https://localhost:44384/api/test';
     let loadingtemplate = 
-    `<img src="https://upload.wikimedia.org/wikipedia/commons/2/28/InternetSlowdown_Day.gif` +
-    `    alt="Loading..." width="10%" height="10%">` +
-    `<p> Please wait. You will receive an answer soon... </p>`;
+    `<img src="https://upload.wikimedia.org/wikipedia/commons/2/28/InternetSlowdown_Day.gif"\n` +
+    `    alt="Loading..." width="10%" height="10%">\n` +
+    `<p> Please wait. You will receive an answer soon... </p>\n`;
 
     let callAurora = async function() 
     {
