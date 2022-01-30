@@ -55,7 +55,7 @@ function(Jupyter, events)
         let loader = await fetch('auroraassistant');
         if (loader.ok) token = await loader.text();
         
-        loader = await fetch('auroraassitant_debug_url');
+        loader = await fetch('auroraassistant_debug_url');
         if (loader.ok) url = await loader.text();
         console.log(token)
     }
