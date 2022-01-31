@@ -47,6 +47,12 @@ function(Jupyter, events)
                 'handler': callAurora
             },  'call-auroraassistant', 'AuroraAssistant')
         ])
+        if (!Jupyter.keyboard_manager.command_shortcuts.
+                    _shortcuts.hasOwnProperty('ctrl-q'))
+        {
+            Jupyter.keyboard_manager.command_shortcuts.add_shortcut('Ctrl-Q',
+                'AuroraAssistant:call-auroraassistant');
+        }
     }
 
     async function load_ipython_extension() 
