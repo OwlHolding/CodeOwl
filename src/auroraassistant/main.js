@@ -7,7 +7,7 @@ function(Jupyter, events)
     let loadingtemplate = 
     `<img src="https://upload.wikimedia.org/wikipedia/commons/2/28/InternetSlowdown_Day.gif"\n` +
     `    alt="Loading..." width="10%" height="10%">\n` +
-    `<p> Please wait. You will receive an answer soon... </p>\n`;
+    `<p> Please wait. You will receive an answer soon... </p>`;
 
     let callAurora = async function() 
     {
