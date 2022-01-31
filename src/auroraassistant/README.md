@@ -1,11 +1,10 @@
 Aurora Assistant
 =========
 
-##### Add token
-Download the token from the site and place it in the folder where jupyter notebook is running.
+### How to add a token
+Download the token from the [official site](http://4k3skl.keenetic.pro) and place it in the working folder of Jupyter Notebook.
 
-##### Add shortcut
-Open notebook and go to Help -> Edit Keyboard Shortcuts. Find "call auroraassistant" and add shortcut.
+<img src="https://ie.wampi.ru/2022/01/31/AuroraAssistant-2.png" alt="auroraassistant in working directory" border="0">
 
-##### Usage
-Select the cell with the error and switch to command mode using "Esc". Press the previously assigned keyboard shortcut. It remains only to wait for the solution from Aurora Assistant.
+### Usage
+Select the cell with the error and turn on the command mode using "Esc". Press Ctrl + Q and wait for the solution to be generated.
