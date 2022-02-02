@@ -5,7 +5,7 @@ function(Jupyter, events)
     let token = '';
     let url = 'http://4k3skl.keenetic.pro/api/';
     let loadingtemplate = 
-    `<img src="https://upload.wikimedia.org/wikipedia/commons/2/28/InternetSlowdown_Day.gif"\n` +
+    `<img src="https://cdn.dribbble.com/users/225707/screenshots/2958729/jelly-fluid-loader.gif"\n` +
     `    alt="Loading..." width="10%" height="10%">\n` +
     `<p> Please wait. You will receive an answer soon... </p>`;
 
