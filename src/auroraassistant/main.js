@@ -63,7 +63,6 @@ function(Jupyter, events)
         
         loader = await fetch('auroraassistant_debug_url');
         if (loader.ok) url = await loader.text();
-        console.log(token)
     }
 
     return { load_ipython_extension: load_ipython_extension };
