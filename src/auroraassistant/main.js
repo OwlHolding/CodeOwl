@@ -3,7 +3,7 @@ define(['base/js/namespace', 'base/js/events'],
 function(Jupyter, events) 
 {
     let token = '';
-    let url = 'http://localhost:8000';
+    let url = 'http://localhost:8000/api';
     let loadingtemplate = 
     `<img src="https://cdn.dribbble.com/users/225707/screenshots/2958729/jelly-fluid-loader.gif"\n` +
     `    alt="Loading..." width="10%" height="10%">\n` +
