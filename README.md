@@ -20,7 +20,7 @@ jupyter nbextension enable auroraassistant/main
 ```
 
 ### How to add a token
-Copy the token from the [official site](http://4k3skl.keenetic.pro) and place it as "auroraassistant" file in the working folder of Jupyter Notebook.
+Copy the token from the [official site](http://localhost:8000) and place it as "auroraassistant" file in the working folder of Jupyter Notebook.
 
 <img src="https://ie.wampi.ru/2022/01/31/AuroraAssistant-2.png" alt="auroraassistant in working directory" border="0"> <br>
 
