@@ -9,7 +9,7 @@ function(Jupyter, events)
     `    alt="Loading..." width="10%" height="10%">\n` +
     `<p> Please wait. You will receive an answer soon... </p>`;
 
-    let callAurora = async function() 
+    let callCodeOwl = async function() 
     {
         let cellOutput = Jupyter.notebook.
             get_selected_cell().output_area.outputs[0];
@@ -37,31 +37,31 @@ function(Jupyter, events)
         }
     };
 
-    let auroraAssistantButton = function () 
+    let codeOwlButton = function () 
     {
         Jupyter.toolbar.add_buttons_group
         ([
             Jupyter.keyboard_manager.actions.register ({
-                'help': 'Call AuroraAsssistant',
+                'help': 'CodeOwl',
                 'icon' : 'fa-play-circle',
                 'handler': callAurora
-            },  'call-auroraassistant', 'AuroraAssistant')
+            },  'codeowl', 'CodeOwl')
         ])
         if (!Jupyter.keyboard_manager.command_shortcuts.
                     _shortcuts.hasOwnProperty('ctrl-q'))
         {
             Jupyter.keyboard_manager.command_shortcuts.add_shortcut('Ctrl-Q',
-                'AuroraAssistant:call-auroraassistant');
+                'CodeOwl:codeowl');
         }
     }
 
     async function load_ipython_extension() 
     {
-        auroraAssistantButton();
-        let loader = await fetch('auroraassistant');
+        codeOwlButton();
+        let loader = await fetch('codeowl');
         if (loader.ok) token = await loader.text();
         
-        loader = await fetch('auroraassistant_debug_url');
+        loader = await fetch('codeowl_debug_url');
         if (loader.ok) url = await loader.text();
     }
 
