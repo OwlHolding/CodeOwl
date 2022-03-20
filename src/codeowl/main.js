@@ -13,6 +13,14 @@ function(Jupyter, events)
     {
         let cellOutput = Jupyter.notebook.
             get_selected_cell().output_area.outputs[0];
+        let code = '';
+        for (let i = 0; i < code.length; ++i) 
+        { 
+            cell = Jupyter.notebook.get_cells()[i]
+            code += cell + '\n';
+            if (cell == Jupyter.notebook.get_selected_cell())
+                break;
+        }
         if (cellOutput.output_type == 'error')
         {
             Jupyter.notebook.insert_cell_below();
@@ -29,7 +37,8 @@ function(Jupyter, events)
                 },
                 body: JSON.stringify(
                     {"token": token, 
-                        "traceback": cellOutput.traceback.join('')})
+                        "traceback": cellOutput.traceback.join(''),
+                            "code": code})
             });
             let solution = await response.text();
             cell.set_text(solution);
@@ -44,7 +53,7 @@ function(Jupyter, events)
             Jupyter.keyboard_manager.actions.register ({
                 'help': 'CodeOwl',
                 'icon' : 'fa-play-circle',
-                'handler': callAurora
+                'handler': callCodeOwl
             },  'codeowl', 'CodeOwl')
         ])
         if (!Jupyter.keyboard_manager.command_shortcuts.
