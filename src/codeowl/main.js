@@ -6,7 +6,7 @@ function(Jupyter, events)
     let token = '';
     let url = 'http://localhost:8000/';
     let loadingtemplate = 
-    `<img src="https://downloader.disk.yandex.ru/preview/d59f6173214890cc2e365e69a8117f0f14dff4fd317e4fa2335c2da98a069023/623766e7/8umrP0U9lF0YtRWsYHcPhBlzbGfmcnKP50OK0V8zMwtBYbA0i1TciwNoCCN6yeA7eHhZVPLjAxTGVFEDB828_g%3D%3D?uid=0&filename=loading.gif&disposition=inline&hash=&limit=0&content_type=image%2Fgif&owner_uid=0&tknv=v2&size=2048x2048"\n` +
+    `<img src="https://ie.wampi.ru/2022/03/21/loading.gif"\n` +
     `    alt="Loading..." width="10%" height="10%">\n` +
     `<p> Please wait. You will receive an answer soon... </p>`;
 
