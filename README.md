@@ -28,4 +28,4 @@ Select the cell with the error and turn on the command mode using "Esc". Press C
 
 <br>
 
-<img src="https://ie.wampi.ru/2022/03/21/merge.gif" alt="demo.gif" width="70%" heigth="70%">
+<img src="https://ie.wampi.ru/2022/03/21/merge.gif" alt="demo.gif" width="100%" heigth="100%">
