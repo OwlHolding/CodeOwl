@@ -4,6 +4,6 @@ Name: CodeOwl
 Main: main.js
 Link: README.md
 Description: |
-  Fix errors easily
+  Fix errors easily.
 Parameters:
 - none

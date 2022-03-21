@@ -1,15 +1,15 @@
-Aurora Assistant
+CodeOwl
 =========
 
 ### How to add a token
-Copy the token from the [official site](http://localhost:8000) and place it as "auroraassistant" file in the working folder of Jupyter Notebook.
+The token is automatically downloaded from the server if you are logged in to [our site](http://10.10.25.82/).
 
-<img src="https://ie.wampi.ru/2022/01/31/AuroraAssistant-2.png" alt="auroraassistant in working directory" border="0"> <br>
-
-You can also use the command:
-```
-echo your_token > auroraassistant
-```
+### User Replacement
+Log out of your account on the [site](http://http://10.10.25.82/), then log in to a new one. After a while, the token will be replaced automatically.
 
 ### Usage
 Select the cell with the error and turn on the command mode using "Esc". Press Ctrl + Q and wait for the solution to be generated.
+
+<br>
+
+<img src="https://ie.wampi.ru/2022/03/21/merge.gif" alt="demo.gif" width="70%" heigth="70%">
