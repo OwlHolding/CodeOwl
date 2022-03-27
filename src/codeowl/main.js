@@ -12,9 +12,8 @@ function(Jupyter, events)
 
     let callCodeOwl = async function(check=true)
     {
-        let cellOutputs = Jupyter.notebook.
-            get_selected_cell().output_area.outputs;
-        let cellOutput = cellOutputs[cellOutputs.length - 1]
+        let cellOutput = Jupyter.notebook.
+            get_selected_cell().output_area.outputs.slice(-1)[0];
         let code = '';
         for (let i = 0; i < Jupyter.notebook.get_cells().length; ++i) 
         { 
