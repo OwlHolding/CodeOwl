@@ -4,7 +4,7 @@ function(Jupyter, events)
 {
     let lastWindow;
     let token = '';
-    let url = 'http://localhost:8000/';
+    let url = 'https://codeowl.pythonanywhere.com/';
     let loadingtemplate = 
     `<img src="https://ie.wampi.ru/2022/03/21/loading.gif"\n` +
     `    alt="Loading..." width="10%" height="10%">\n` +

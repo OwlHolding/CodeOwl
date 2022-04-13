@@ -18,10 +18,10 @@ jupyter nbextension enable codeowl/main
 ```
 
 ### How to add a token
-The token is automatically downloaded from the server if you are logged in to [our site](http://109.248.175.238).
+The token is automatically downloaded from the server if you are logged in to [our site](https://codeowl.pythonanywhere.com/).
 
 ### User Replacement
-Log out of your account on the [site](http://109.248.175.238), then log in to a new one. After a while, the token will be replaced automatically.
+Log out of your account on the [site](https://codeowl.pythonanywhere.com/), then log in to a new one. After a while, the token will be replaced automatically.
 
 ### Usage
 Select the cell with the error and turn on the command mode using "Esc". Press Ctrl + Q and wait for the solution to be generated.
